@@ -27,3 +27,12 @@ git pull
 ==============================
 setup.py : Building our application as a package itself
 -e . : # this will automatically trigger the setup.py file
+
+
+## ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+docker login az4registry.azurecr.io
+
+docker build -t az4registry.azurecr.io/mltest:latest .
+
+docker push az4registry.azurecr.io/mltest:latest
